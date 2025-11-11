@@ -1,0 +1,122 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl; /* لإضفاء الطابع العربي */
+    background-color: #1b1b2f; /* خلفية داكنة */
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 93.8vh;
+    text-align: center;
+    position: relative;
+    margin: 0;
+}
+
+/* رابط العودة للصفحة الرئيسية */
+a.home-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    background-color: #0f0; /* أخضر */
+    color: #1b1b2f;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 0 8px rgba(0, 255, 0, 0.5);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    z-index: 1000;
+}
+
+a.home-link:hover {
+    background-color: #f00; /* أحمر عند المرور */
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.6);
+}
+
+/* العناوين */
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #0f0; /* أخضر */
+    text-shadow: 1px 1px 6px #f00; /* ظل أحمر */
+}
+
+/* حقل البحث */
+#search-input {
+    padding: 12px;
+    width: 300px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: right; /* للغة العربية */
+    background-color: #2d2d44;
+    color: #ffffff;
+    outline: none;
+}
+
+#search-input::placeholder {
+    color: #aaa;
+}
+
+/* معلومات اللاعب */
+#player-info {
+    background-color: #2d2d44;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.4); /* ظل أخضر */
+    display: none;
+    margin-bottom: 30px;
+    width: 320px;
+}
+
+#player-info h3 {
+    color: #0f0; /* أخضر */
+    margin-bottom: 15px;
+}
+
+#player-info p {
+    margin: 8px 0;
+    font-size: 20px;
+    color: #f00; /* نص أحمر */
+}
+
+/* عناصر اللاعبين */
+.player-item {
+    background-color: #2d2d44;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 255, 0, 0.4); /* ظل أخضر */
+    width: 320px;
+    color: #0f0; /* نص أخضر */
+}
+
+/* الفوتر */
+footer {
+    margin-top: auto;
+    background-color: #111827;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    color: #f00; /* نص أحمر */
+    font-size: 16px;
+    box-shadow: 0 -2px 8px rgba(255, 0, 0, 0.5);
+    user-select: none;
+}
+
+footer a {
+    color: #0f0; /* روابط أخضر */
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 8px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #f00; /* أحمر عند المرور */
+}
